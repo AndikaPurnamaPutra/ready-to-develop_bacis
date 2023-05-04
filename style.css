@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive, Montserrat, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -9,18 +11,38 @@
   padding: 20px 50px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a {
+  font-family: "Comfortaa", cursive;
+}
+
 .btn {
   text-decoration: none;
-  font-family: "Comfortaa", cursive;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   display: inline-block;
 }
-
 .btn:hover {
   color: #b6ac92;
+}
+.btn img {
+  width: 15px;
+  margin-left: 2rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
 }
 
 nav {
@@ -39,9 +61,8 @@ nav .container-navbar .navbar-nav {
 nav .container-navbar .navbar-nav a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Comfortaa", cursive;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   display: block;
   font-weight: 600;
 }
@@ -57,34 +78,27 @@ nav .navbar-toggle {
 }
 #talent .header-content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+#talent .header-content .text-content {
+  width: 42vw;
   margin-bottom: 54px;
 }
-#talent .header-content h2 {
+#talent .header-content .text-content h2 {
   color: #b6ac92;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 56px;
   font-weight: 600;
-  flex: 50%;
   margin-bottom: 30px;
 }
-#talent .header-content p {
-  font-size: 16px;
+#talent .header-content .text-content p {
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Comfortaa", cursive;
   color: #ffffff;
-  width: 629px;
-  opacity: 60%;
-  flex: 50%;
-}
-#talent .header-content img {
-  width: 15px;
-  margin-left: 32px;
+  opacity: 0.6;
+  line-height: 26px;
 }
 #talent .cards-group {
   display: flex;
@@ -93,57 +107,58 @@ nav .navbar-toggle {
 }
 #talent .cards-group .card-items {
   display: flex;
-  width: 438px;
+  width: 27.3vw;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
   background-color: #0b0b0b;
   margin-bottom: 20px;
   border-radius: 4px;
 }
-#talent .cards-group .card-items .card-content {
-  padding-top: 8px;
-  padding-bottom: 16px;
+#talent .cards-group .card-items .img-content {
+  position: relative;
+}
+#talent .cards-group .card-items .img-content .text-content {
   position: absolute;
+  box-sizing: border-box;
+  bottom: 11rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.4rem;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   text-align: center;
-  bottom: 27%;
+  bottom: 4rem;
 }
-#talent .cards-group .card-items .card-content h2 {
+#talent .cards-group .card-items .img-content .text-content h2 {
   color: #ffffff;
   font-size: 36px;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 }
-#talent .cards-group .card-items .card-content p {
+#talent .cards-group .card-items .img-content .text-content p {
   color: #ffffff;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   color: #8ec4bb;
 }
-#talent .cards-group .card-items .card-desc {
+#talent .cards-group .card-items .desc-content {
   padding: 24px 20px;
   color: #ffffff;
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
+  font-size: 1rem;
   line-height: 26px;
 }
-@media screen and (min-width: 640px) {
+
+@media screen and (max-width: 576px) {
   #talent .card-item {
     width: 50%;
   }
 }
-@media screen and (min-width: 896px) {
+@media screen and (max-width: 768px) {
   #talent .card-item {
     width: 33.3333%;
   }
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   nav .navbar-toggle {
     display: block;
   }
