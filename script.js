@@ -20,12 +20,12 @@ function stickyNav() {
 window.addEventListener("scroll", stickyNav);
 
 // Slider
-let counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
+// let counter = 1;
+// setInterval(function () {
+//   document.getElementById("radio" + counter).checked = true;
+//   counter++;
 
-  if (counter > 3) {
-    counter = 1;
-  }
-}, 5000);
+//   if (counter > 3) {
+//     counter = 1;
+//   }
+// }, 5000);
