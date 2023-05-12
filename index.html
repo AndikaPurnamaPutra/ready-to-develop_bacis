@@ -7,27 +7,31 @@
     <title>INDIE LIFE</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
     <!-- NAVBAR SECTION -->
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a class="navbar-logo"><img src="assets/images/logo.png" alt="" /></a>
-          <div class="navbar-toggle">
-            <div class="toggle-line"></div>
-            <div class="toggle-line"></div>
-            <div class="toggle-line"></div>
-          </div>
+      <nav class="navbar">
+        <a class="navbar-logo"><img src="assets/images/logo.png" alt="" /></a>
+        <div class="navbar-toggle">
+          <div class="toggle-line"></div>
+          <div class="toggle-line"></div>
+          <div class="toggle-line"></div>
+        </div>
+        <!-- <span id="navbar-toggle" class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span> -->
+        <div class="navbar-nav">
           <div class="navbar-list">
-            <a href="#" class="active">home</a>
+            <a href="#">home</a>
             <a href="#">creatives</a>
             <a href="#">clients</a>
             <a href="#">community</a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <!-- SECTION 1 START -->
@@ -38,54 +42,29 @@
             <h1 class="heading-content">WE’RE REIMAGINING  THE GIG ECONOMY</h1>
             <div class="column-left-one">
               <div class="content-column-one">
-                <img
-                  src="assets/images/hero-img-1.png"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                  class="img-header"
-                  alt=""
-                />
+                <img src="assets/images/hero-img-1.png" class="img-header" alt="" />
               </div>
               <div class="content-column-two">
-                <img
-                  src="assets/images/hero-img-2.png"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                  class="img-header"
-                  alt=""
-                />
+                <img src="assets/images/hero-img-2.png" class="img-header" alt="" />
                 <a href="#" class="btn cta-white"
-                  >I’m a Client <img src="assets/images/arrow-small-orange.png" class="img-header" alt=""
+                  >I’m a Client <img src="assets/images/arrow-small-orange.png" alt=""
                 /></a>
               </div>
             </div>
             <div class="column-left-two">
-              <img
-                src="assets/images/hero-img-3.png"
-                alt=""
-                style="width: 100%; height: 100%; object-fit: cover"
-                class="img-header"
-              />
+              <img src="assets/images/hero-img-3.png" alt="" class="img-header" />
             </div>
           </div>
           <div class="column-right">
             <div class="column-right-one">
               <div class="content-column-one">
-                <img
-                  src="assets/images/hero-img-4.png"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                  class="img-header"
-                  alt=""
-                />
+                <img src="assets/images/hero-img-4.png" class="img-header" alt="" />
                 <a href="#" class="btn cta-orange"
                   >I’m a Creative <img src="assets/images/arrow-small-white.png" alt=""
                 /></a>
               </div>
               <div class="content-column-two">
-                <img
-                  src="assets/images/hero-img-5.png"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                  class="img-header"
-                  alt=""
-                />
+                <img src="assets/images/hero-img-5.png" class="img-header" alt="" />
               </div>
             </div>
             <div class="column-right-two">
@@ -97,10 +76,16 @@
               />
             </div>
           </div>
+          <a href="#" class="btn btn--arrow btn--arrow-orange"
+            >I’m a Creative <img src="assets/images/arrow-small-white.png" alt=""
+          /></a>
+          <a href="#" class="btn btn--arrow btn--arrow-white"
+            >I’m a Creative <img src="assets/images/arrow-small-orange.png" alt=""
+          /></a>
         </div>
       </div>
     </section>
-    <section class="social-button">
+    <!-- <section class="social-button">
       <div class="container">
         <div class="wrapper">
           <a href="#" class="btn btn--primary">EMAIL</a>
@@ -109,7 +94,7 @@
           <a href="#" class="btn btn--primary btn--active">@ Indie-Life</a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- SECTION 1 END -->
 
     <!-- SECTION 2 START -->
@@ -165,6 +150,28 @@
               </div>
             </div>
           </div>
+          <div class="column-card-mobile">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-body">
+                  <h4>300+</h4>
+                  <p>Make up our robust community of independent talent.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4>100s OF PROJECTS</h4>
+                  <p>Completed for clients across a diverse range of industries.</p>
+                </div>
+              </div>
+              <div class="card active">
+                <div class="card-body">
+                  <h4>15+ Years</h4>
+                  <p>Of experience making magic for our clients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -173,7 +180,7 @@
     <!-- SECTION 3 START -->
     <section class="section-logo">
       <div class="container">
-        <div class="logo-content">
+        <div class="logo-content logo-slick-slider">
           <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
           <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
           <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
@@ -203,7 +210,37 @@
             <img src="assets/images/arrow-small-white.png" alt="" />
           </a>
         </div>
-        <div class="card-group">
+        <div class="card-group multiple-items">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/card-1.png" alt="card-image" />
+              <div class="text-content">
+                <h3>ETTIENE MAURICE</h3>
+                <h5>Filmmaker | Creative Director</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/card-1.png" alt="card-image" />
+              <div class="text-content">
+                <h3>ETTIENE MAURICE</h3>
+                <h5>Filmmaker | Creative Director</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+              </p>
+            </div>
+          </div>
           <div class="card">
             <div class="card-img">
               <img src="assets/images/card-1.png" alt="card-image" />
@@ -309,7 +346,7 @@
                 <img src="assets/images/arrow-lg.png" alt="" />
                 <a href="#" class="btn btn--custom">Content Dev + Brand Management</a>
               </div>
-              <div class="image-active">
+              <div class="image-active image-active--bottom">
                 <img src="assets/images/image-creative.png" alt="" />
               </div>
             </div>
@@ -318,7 +355,7 @@
                 <img src="assets/images/arrow-lg.png" alt="" />
                 <a href="#" class="btn btn--custom">Project Management</a>
               </div>
-              <div class="image-active">
+              <div class="image-active image-active--bottom">
                 <img src="assets/images/image-creative.png" alt="" />
               </div>
             </div>
@@ -327,7 +364,7 @@
                 <img src="assets/images/arrow-lg.png" alt="" />
                 <a href="#" class="btn btn--custom">Design Subscription</a>
               </div>
-              <div class="image-active">
+              <div class="image-active image-active--bottom">
                 <img src="assets/images/image-creative.png" alt="" />
               </div>
             </div>
@@ -336,7 +373,7 @@
                 <img src="assets/images/arrow-lg.png" alt="" />
                 <a href="#" class="btn btn--custom">Design Packages</a>
               </div>
-              <div class="image-active image--active-last-child">
+              <div class="image-active image-active--bottom">
                 <img src="assets/images/image-creative.png" alt="" />
               </div>
             </div>
@@ -347,15 +384,76 @@
 
     <!-- SECTION 6 -->
     <section class="portfolio">
-      <div class="container">
-        <div class="portfolio-heading">
-          <div class="text-content">
-            <h2>PORTFOLIO</h2>
+      <div class="portfolio-heading container">
+        <div class="text-content">
+          <h2>PORTFOLIO</h2>
+          <p>Delivering impactful design that is imaginative, thoughtful, and distinctive..</p>
+        </div>
+        <a href="#" class="btn cta-white"
+          >START A PROJECT
+          <img src="assets/images/arrow-small-white.png" alt="" />
+        </a>
+      </div>
+      <div class="portfolio-content container">
+        <div class="portfolio-content-wrapper">
+          <div class="portfolio-content-image">
+            <img src="assets/images/image-portfolio.png" alt="" />
           </div>
-          <a href="#" class="btn cta-white"
-            >START A PROJECT
-            <img src="assets/images/arrow-small-white.png" alt="" />
-          </a>
+          <div class="portfolio-content-text">
+            <h2>Party Scars and Prison Bars Two-and-a-Half: A Trashography Sequel</h2>
+            <p>
+              Indie-Life Media was proud to be responsible for recording, mixing, and mastering Darkest Hour‘s live sets
+              and lending a hand in the creation of their amazing video (above).
+            </p>
+            <a href="#" class="btn btn--secondary"
+              >VIEW PORTFOLIO <img src="assets/images/arrow-small-white.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-content-wrapper">
+          <div class="portfolio-content-image">
+            <img src="assets/images/image-portfolio.png" alt="" />
+          </div>
+          <div class="portfolio-content-text">
+            <h2>Party Scars and Prison Bars Two-and-a-Half: A Trashography Sequel</h2>
+            <p>
+              Indie-Life Media was proud to be responsible for recording, mixing, and mastering Darkest Hour‘s live sets
+              and lending a hand in the creation of their amazing video (above).
+            </p>
+            <a href="#" class="btn btn--secondary"
+              >VIEW PORTFOLIO <img src="assets/images/arrow-small-white.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-content-wrapper">
+          <div class="portfolio-content-image">
+            <img src="assets/images/image-portfolio.png" alt="" />
+          </div>
+          <div class="portfolio-content-text">
+            <h2>Party Scars and Prison Bars Two-and-a-Half: A Trashography Sequel</h2>
+            <p>
+              Indie-Life Media was proud to be responsible for recording, mixing, and mastering Darkest Hour‘s live sets
+              and lending a hand in the creation of their amazing video (above).
+            </p>
+            <a href="#" class="btn btn--secondary"
+              >VIEW PORTFOLIO <img src="assets/images/arrow-small-white.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-content-wrapper">
+          <div class="portfolio-content-image">
+            <img src="assets/images/image-portfolio.png" alt="" />
+          </div>
+          <div class="portfolio-content-text">
+            <h2>Party Scars and Prison Bars Two-and-a-Half: A Trashography Sequel</h2>
+            <p>
+              Indie-Life Media was proud to be responsible for recording, mixing, and mastering Darkest Hour‘s live sets
+              and lending a hand in the creation of their amazing video (above).
+            </p>
+            <a href="#" class="btn btn--secondary"
+              >VIEW PORTFOLIO <img src="assets/images/arrow-small-white.png" alt=""
+            /></a>
+          </div>
         </div>
       </div>
     </section>
@@ -405,51 +503,22 @@
 
     <!-- SECTION 9 -->
     <section class="slider">
-      <div class="slider-wrapper">
-        <div class="slide first">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
-        </div>
+      <div class="container container--no-padding">
+        <div class="slider-wrapper">
+          <div class="slide first">
+            <img src="assets/images/img_slider.png" style="width: 100%" />
+          </div>
 
-        <div class="slide">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
-        </div>
+          <div class="slide">
+            <img src="assets/images/img_slider.png" style="width: 100%" />
+          </div>
 
-        <div class="slide">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
+          <div class="slide">
+            <img src="assets/images/img_slider.png" style="width: 100%" />
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- <section id="section_9_slider">
-      <div class="slideshow-container">
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-
-        <div class="slide first">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
-        </div>
-
-        <div class="slide">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
-        </div>
-
-        <div class="slide">
-          <img src="assets/images/img_slider.png" style="width: 100%" />
-        </div>
-
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-        </div>
-      </div>
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-      </div>
-    </section> -->
 
     <!-- FOOTER -->
     <footer>
@@ -461,8 +530,8 @@
                 <img src="assets/images/logo.png" alt="" />
                 <p>Creating Relationships that Help Brands Shine.</p>
                 <div class="description">
-                  <p>TERMS OF SERVICE</p>
-                  <p>PRIVACY POLICY</p>
+                  <a class="btn">TERMS OF SERVICE</a>
+                  <a class="btn">PRIVACY POLICY</a>
                 </div>
               </div>
               <div class="contact-us">
@@ -481,15 +550,15 @@
             </div>
             <div class="menu">
               <h3>MENU</h3>
-              <p>Indie-life Events</p>
-              <p>Indie-life studio</p>
+              <a class="btn">Indie-life Events</a>
+              <a class="btn">Indie-life studio</a>
             </div>
           </div>
           <div class="social-media">
-            <a href="#" class="btn btn--primary">EMAIL</a>
-            <a href="#" class="btn btn--primary">IN</a>
-            <a href="#" class="btn btn--primary">FB</a>
-            <a href="#" class="btn btn--primary btn--active">@ Indie-Life</a>
+            <a href="#" class="btn btn--primary btn--primary-dark">EMAIL</a>
+            <a href="#" class="btn btn--primary btn--primary-dark">IN</a>
+            <a href="#" class="btn btn--primary btn--primary-dark">FB</a>
+            <a href="#" class="btn btn--primary btn--primary-dark btn--active-dark">@ Indie-Life</a>
           </div>
         </div>
       </div>
@@ -514,7 +583,7 @@
           dots: false,
           variableWidth: false,
           draggable: true,
-          speed: 200,
+          speed: 300,
           slidesToScroll: 1,
           centerMode: false,
           autoplay: true,
@@ -529,6 +598,93 @@
                 autoplay: true,
                 centerMode: false,
                 variableWidth: false,
+              },
+            },
+          ],
+        });
+
+        $(".logo-slick-slider").slick({
+          autoplay: true,
+          autoplaySpeed: 0,
+          arrows: false,
+          speed: 2500,
+          slidesToShow: 5,
+          cssEase: "linear",
+        });
+
+        $(".portfolio-content").slick({
+          centerMode: false,
+          centerPadding: "60px",
+          slidesToShow: 1,
+          vertical: true,
+          arrows: false,
+          dots: true,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                vertical: false,
+                dots: false,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                dots: false,
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+
+        $(".card-wrap").slick({
+          autoplay: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplaySpeed: 2000,
+        });
+
+        $(".multiple-items").slick({
+          infinite: true,
+          slidesToShow: 3,
+          arrows: false,
+          slidesToScroll: 3,
+
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                centerMode: true,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                centerMode: true,
               },
             },
           ],
