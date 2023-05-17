@@ -18,11 +18,17 @@ body {
 .container {
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
 
   &--no-padding {
     padding: unset;
   }
+}
+section {
+  width: 100%;
 }
 
 h1,
@@ -54,11 +60,13 @@ p {
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+  text-transform: uppercase;
   font-weight: 600;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
 
   &:hover {
+    cursor: pointer;
     color: #b6ac92;
   }
 
@@ -71,6 +79,7 @@ p {
     img {
       margin-left: 32px;
       max-width: 15px;
+      object-fit: contain;
     }
 
     &--lg {
@@ -85,6 +94,7 @@ p {
     border-radius: 25px;
 
     &:hover {
+      cursor: pointer;
       background-color: #31aad0;
       color: #ffffff;
     }
@@ -94,8 +104,8 @@ p {
 // NAVBAR
 header {
   position: sticky;
-  max-width: 100%;
-  padding: 0 30px;
+  width: 100%;
+  // padding: 0 30px;
   top: 0;
   transition: all 0.5s ease-in-out;
   z-index: 2;
@@ -279,10 +289,10 @@ header {
   }
 
   &--header-content {
+    position: absolute;
+    top: 31px;
+    left: 40px;
     .heading-text {
-      position: absolute;
-      top: 31px;
-      left: 40px;
       text-align: start;
       color: #ffffff;
       font-size: 68px;
@@ -291,6 +301,7 @@ header {
 
   .social-media {
     position: absolute;
+    display: flex;
     bottom: 67px;
 
     .btn--primary {
@@ -306,6 +317,7 @@ header {
   background-color: #000000;
   .section-two-content {
     display: flex;
+    justify-content: space-between !important;
     gap: 99px;
     .column-content {
       display: flex;
@@ -326,10 +338,7 @@ header {
       }
     }
 
-    .section-two-content,
     .column-card {
-      margin: 0 auto;
-      flex: 1;
       display: flex;
       gap: 32px;
       height: 673px;
@@ -347,6 +356,8 @@ header {
       }
 
       .card {
+        width: 353px;
+        flex-shrink: 0;
         display: flex;
         background-color: #212222;
 
@@ -405,11 +416,11 @@ header {
   padding-bottom: 67px;
 
   .logo-content {
-    width: 100%;
-    display: flex;
+    overflow: auto;
     align-items: center;
-    gap: 40px;
-    overflow-x: auto;
+    a {
+      padding: 0 43px;
+    }
 
     &::-webkit-scrollbar {
       display: none;
@@ -418,7 +429,7 @@ header {
 
   .slick-track {
     display: flex;
-    gap: 30px;
+    gap: 33px;
     justify-content: center;
     align-items: center;
 
@@ -432,6 +443,7 @@ header {
 .section_four {
   padding-top: 32px;
   background-color: #000000;
+  width: 100%;
 
   .heading-content {
     display: flex;
@@ -462,6 +474,10 @@ header {
     gap: 33px;
     overflow: auto;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     .slick-track {
       display: flex;
       gap: 30px;
@@ -470,7 +486,8 @@ header {
     }
 
     .card {
-      width: 100vw;
+      width: 438px;
+      flex-shrink: 0;
       background-color: #0b0b0b;
 
       &--img {
@@ -492,6 +509,7 @@ header {
           h3 {
             font-size: 40px;
             color: #ffffff;
+            text-transform: uppercase;
             font-weight: 400;
           }
 
@@ -520,6 +538,7 @@ header {
   background-color: #000000;
   padding-top: 160px;
   padding-bottom: 100px;
+  width: 100%;
 
   .heading-content {
     display: flex;
@@ -555,17 +574,18 @@ header {
       .btn-wrapper {
         display: flex;
         width: 100%;
-        // justify-content: space-between;
         position: relative;
         border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
 
         .btn-lg {
           padding-top: 26px;
           padding-bottom: 26px;
+          display: flex;
           width: 100%;
           img {
             transition: all 200ms ease;
             max-width: 42px;
+            object-fit: contain;
             width: 0;
           }
         }
@@ -612,6 +632,8 @@ header {
 
 // SECTION_6
 .portfolio {
+  background-color: #212222;
+  width: 100%;
   .portfolio-heading {
     background-color: #e13d31;
     padding-top: 65.5px;
@@ -636,23 +658,32 @@ header {
   }
 
   .portfolio-content {
-    display: flex;
-    gap: 33px;
-    overflow: auto;
-    padding-top: 202px;
-    padding-bottom: 188px;
     background-color: #212222;
-    position: relative;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 40px 0;
 
+    &.slick-dotted.slick-slider {
+      margin-bottom: unset;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .portfolio-content-wrapper {
-      width: 100vw;
-      display: flex;
+      width: 100%;
+      flex-shrink: 0;
+      display: flex !important;
+      margin: 10px 33px;
+      gap: 30px;
       justify-content: center;
       align-items: center;
-      gap: 30px;
 
       .portfolio-content-image {
-        width: 100%;
+        width: 565px;
+        flex-shrink: 0;
+
         img {
           width: 100%;
           object-fit: cover;
@@ -660,7 +691,6 @@ header {
       }
 
       .portfolio-content-text {
-        padding-right: 57px;
         h2 {
           color: #b6ac92;
           font-size: 64px;
@@ -676,33 +706,34 @@ header {
         }
       }
     }
+  }
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 35%;
+    right: 0;
+    list-style-type: none;
 
-    .slick-dots {
-      position: absolute;
-      right: 0;
-      top: 50%;
+    li {
+      margin: 10px 14px;
+    }
 
-      list-style-type: none;
+    button {
+      width: 14px;
+      height: 14px;
+      padding: 0;
+      border: 2px solid #b6ac9266;
+      border-radius: 100%;
+      background-color: transparent;
 
-      li {
-        margin: 16px 14px;
-      }
+      text-indent: -9999px;
+    }
 
-      button {
-        display: block;
-        width: 14px;
-        height: 14px;
-        padding: 0;
-        border: 2px solid #b6ac9266;
-        border-radius: 100%;
-        background-color: transparent;
-
-        text-indent: -9999px;
-      }
-
-      li.slick-active button {
-        background-color: #ffffff;
-      }
+    li.slick-active button {
+      background-color: #ffffff;
     }
   }
 }
@@ -712,6 +743,7 @@ header {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #000000;
+  width: 100%;
 
   .text-heading {
     color: #ffffff;
@@ -727,6 +759,7 @@ header {
 
       .card-body {
         height: 520px;
+        flex-shrink: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -759,6 +792,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #212222;
+  width: 100%;
 
   .heading-content {
     display: flex;
@@ -786,15 +820,23 @@ header {
 // SECTION_9_SLIDER
 .slider {
   background-color: #000000;
+
   &--wrapper {
     display: flex;
     gap: 30px;
     overflow: auto;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     .slide {
-      background-color: #17d1ff;
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
       img {
-        width: 100vw;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }
@@ -805,6 +847,8 @@ footer {
   background-color: #e13d31;
   padding-top: 60px;
   padding-bottom: 36px;
+  width: 100%;
+
   .footer-content {
     .profile {
       display: flex;

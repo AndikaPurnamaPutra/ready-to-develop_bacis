@@ -60,26 +60,27 @@
     .section-two .section-two-content .column-content {
       max-width: unset; }
     .section-two .section-two-content .column-card {
-      height: 373px; }
-      .section-two .section-two-content .column-card .card-left {
-        display: none; }
-      .section-two .section-two-content .column-card .card-right {
-        display: none; }
+      display: none; }
     .section-two .section-two-content .column-card-mobile {
       display: flex; }
       .section-two .section-two-content .column-card-mobile .card-wrap {
         display: flex;
         gap: 32px;
         overflow-x: auto; }
+        .section-two .section-two-content .column-card-mobile .card-wrap .slick-track {
+          display: flex;
+          gap: 33px; }
         .section-two .section-two-content .column-card-mobile .card-wrap .card {
           background-color: #212222; }
           .section-two .section-two-content .column-card-mobile .card-wrap .card .card-body {
-            width: 100vw;
+            width: 100%;
+            height: 322px;
+            flex-shrink: 0;
             padding: 30px 42px;
-            height: 420px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center; }
             .section-two .section-two-content .column-card-mobile .card-wrap .card .card-body h4 {
               font-size: 48px;
@@ -105,6 +106,8 @@
     align-items: flex-start; }
     .section_four .heading-content .text-content {
       margin-bottom: 18px; }
+  .section_four .card-group .card .card-img .text-content {
+    bottom: 39px; }
 
   .creative-service .heading-content {
     flex-direction: column;
@@ -128,9 +131,13 @@
   .portfolio .portfolio-content .portfolio-content-wrapper {
     flex-direction: column;
     margin: 0 10px; }
+    .portfolio .portfolio-content .portfolio-content-wrapper .portfolio-content-image {
+      width: 100%; }
 
-  .section_seven .card-group {
+  .section_seven {
     flex-direction: column; }
+    .section_seven .card-group {
+      flex-direction: column; }
 
   .section_eight .heading-content {
     flex-direction: column;

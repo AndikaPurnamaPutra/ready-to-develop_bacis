@@ -10,33 +10,32 @@
     <link rel="stylesheet" href="responsive.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <!-- <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css" />
   </head>
   <body>
     <!-- NAVBAR SECTION -->
     <header>
-      <nav class="navbar">
-        <a class="navbar-logo"><img src="assets/images/logo.png" alt="" /></a>
-        <div class="navbar-toggle">
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-        </div>
-        <!-- <span id="navbar-toggle" class="navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </span> -->
-        <div class="navbar-nav">
-          <div class="navbar-list">
-            <a href="#">home</a>
-            <a href="#">creatives</a>
-            <a href="#">clients</a>
-            <a href="#">community</a>
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar-logo"><img src="assets/images/logo.png" alt="" /></a>
+          <div class="navbar-toggle">
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
           </div>
-        </div>
-      </nav>
+          <div class="navbar-nav">
+            <div class="navbar-list">
+              <a href="#">home</a>
+              <a href="#">creatives</a>
+              <a href="#">clients</a>
+              <a href="#">community</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- SECTION 1 START -->
@@ -189,8 +188,8 @@
 
     <!-- SECTION 3 START -->
     <section class="section-logo">
-      <div class="container">
-        <div class="logo-content logo-slick-slider">
+      <div class="">
+        <div class="logo-content">
           <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
           <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
           <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
@@ -506,7 +505,7 @@
 
     <!-- SECTION 9 START -->
     <section class="slider">
-      <div class="container container--no-padding">
+      <div class="">
         <div class="slider--wrapper">
           <div class="slide first">
             <img src="assets/images/img_slider.png" />
@@ -618,17 +617,20 @@
           ],
         });
 
-        $(".logo-slick-slider").slick({
+        $(".logo-content").slick({
           autoplay: true,
           autoplaySpeed: 0,
           arrows: false,
           speed: 2500,
-          slidesToShow: 5,
+          slidesToShow: 6,
           cssEase: "linear",
+          variableWidth: true,
+          centerMode: true,
         });
 
         $(".portfolio-content").slick({
           centerMode: false,
+          autoplay: true,
           centerPadding: "60px",
           slidesToShow: 1,
           vertical: true,
@@ -685,6 +687,7 @@
           arrows: false,
           slidesToShow: 3,
           slidesToScroll: 3,
+          centerMode: true,
 
           responsive: [
             {
