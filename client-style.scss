@@ -1,0 +1,38 @@
+.the-tao {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 60px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .box-content {
+      display: flex;
+      gap: 60px;
+      .box-slider {
+        max-width: 1050px;
+        width: 100%;
+        flex-shrink: 0;
+
+        h3 {
+          font-size: 36px;
+          color: #e13d31;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+        }
+
+        p {
+          color: #ffffff;
+          font-size: 20px;
+          text-transform: uppercase;
+          line-height: 43px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

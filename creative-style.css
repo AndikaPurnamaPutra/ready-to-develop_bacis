@@ -41,12 +41,12 @@
     .section-join .join-wrapper .box-content {
       display: flex;
       gap: 10px;
-      overflow-x: auto;
+      width: 100%;
+      overflow: auto;
       padding-top: 60px; }
       .section-join .join-wrapper .box-content::-webkit-scrollbar {
         display: none; }
       .section-join .join-wrapper .box-content .card {
-        width: 100%;
         text-align: center;
         box-sizing: border-box;
         background-color: #212222;
@@ -210,29 +210,57 @@
       display: flex;
       gap: 10px;
       justify-content: center;
-      width: 100%;
-      overflow: hidden; }
+      width: 100%; }
       .artist-marketplace .image-content .wrappers .box-hover {
-        border: 1px solid #b6ac92; }
+        transition: all 200ms ease;
+        border: 2px solid #000000;
+        border-radius: 18px; }
+        .artist-marketplace .image-content .wrappers .box-hover:hover {
+          cursor: pointer;
+          border: 2px solid #b6ac92; }
         .artist-marketplace .image-content .wrappers .box-hover img {
           padding: 20px;
           width: 100%;
           object-fit: contain; }
 
-.the-tao .heading-content {
-  display: flex;
-  align-items: center;
-  background-color: #e13d31;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .the-tao .heading-content h2 {
-    color: #ffffff;
-    text-transform: uppercase; }
-.the-tao .content {
-  background-color: #b6ac92; }
-  .the-tao .content .box {
-    padding-top: 37px;
-    padding-bottom: 37px;
-    display: flex; }
+.the-tao {
+  background-color: #000000;
+  padding: 100px 0; }
+  .the-tao .heading-content {
+    display: flex;
+    align-items: center;
+    background-color: #e13d31;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .the-tao .heading-content h2 {
+      color: #ffffff;
+      text-transform: uppercase; }
+  .the-tao .content {
+    display: flex;
+    flex-direction: column; }
+    .the-tao .content .box {
+      padding: 37px 30px;
+      display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      .the-tao .content .box .wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center; }
+        .the-tao .content .box .wrapper--padding {
+          padding-left: 160px; }
+        .the-tao .content .box .wrapper .circle {
+          width: 14px;
+          height: 14px;
+          border-radius: 100%;
+          background: #ffffff;
+          margin-right: 18px; }
+        .the-tao .content .box .wrapper h5 {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 32px; }
+    .the-tao .content .btn--enjoy {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px; }
 
 /*# sourceMappingURL=creative-style.css.map */

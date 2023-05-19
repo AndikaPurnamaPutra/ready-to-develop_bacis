@@ -1,0 +1,28 @@
+.the-tao .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  margin-top: 60px; }
+  .the-tao .content::-webkit-scrollbar {
+    display: none; }
+  .the-tao .content .box-content {
+    display: flex;
+    gap: 60px; }
+    .the-tao .content .box-content .box-slider {
+      max-width: 1050px;
+      width: 100%;
+      flex-shrink: 0; }
+      .the-tao .content .box-content .box-slider h3 {
+        font-size: 36px;
+        color: #e13d31;
+        text-transform: uppercase;
+        margin-bottom: 16px; }
+      .the-tao .content .box-content .box-slider p {
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 43px;
+        margin-bottom: 40px; }
+
+/*# sourceMappingURL=client-style.css.map */

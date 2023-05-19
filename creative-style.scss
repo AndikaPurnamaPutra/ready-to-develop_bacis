@@ -59,14 +59,14 @@
     .box-content {
       display: flex;
       gap: 10px;
-      overflow-x: auto;
+      width: 100%;
+      overflow: auto;
       padding-top: 60px;
 
       &::-webkit-scrollbar {
         display: none;
       }
       .card {
-        width: 100%;
         text-align: center;
         box-sizing: border-box;
         background-color: #212222;
@@ -322,10 +322,15 @@
       gap: 10px;
       justify-content: center;
       width: 100%;
-      overflow: hidden;
 
       .box-hover {
-        border: 1px solid #b6ac92;
+        transition: all 200ms ease;
+        border: 2px solid #000000;
+        border-radius: 18px;
+        &:hover {
+          cursor: pointer;
+          border: 2px solid #b6ac92;
+        }
 
         img {
           padding: 20px;
@@ -340,6 +345,8 @@
 
 // SECTION THE TAO START
 .the-tao {
+  background-color: #000000;
+  padding: 100px 0;
   .heading-content {
     display: flex;
     align-items: center;
@@ -354,12 +361,42 @@
   }
 
   .content {
-    background-color: #b6ac92;
-
+    display: flex;
+    flex-direction: column;
     .box {
-      padding-top: 37px;
-      padding-bottom: 37px;
+      padding: 37px 30px;
       display: flex;
+      border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+
+      .wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &--padding {
+          padding-left: 160px;
+        }
+
+        .circle {
+          width: 14px;
+          height: 14px;
+          border-radius: 100%;
+          background: #ffffff;
+          margin-right: 18px;
+        }
+
+        h5 {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 32px;
+        }
+      }
+    }
+
+    .btn--enjoy {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
     }
   }
 }

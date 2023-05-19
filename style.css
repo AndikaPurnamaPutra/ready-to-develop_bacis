@@ -68,11 +68,19 @@ p {
     background-color: #ffffff;
     color: #000000;
     padding: 10px 32px;
-    border-radius: 25px; }
-    .btn--primary:hover {
-      cursor: pointer;
-      background-color: #31aad0;
-      color: #ffffff; }
+    border-radius: 25px;
+    transition: all 200ms ease; }
+  .btn--primary-dark:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff; }
+  .btn--primary-blue:hover {
+    cursor: pointer;
+    background-color: #31aad0;
+    color: #ffffff; }
+  .btn--dark {
+    color: #ffffff !important;
+    background-color: #000000 !important; }
 
 header {
   position: sticky;
@@ -605,12 +613,15 @@ footer {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #ffffff;
-        margin-bottom: 14px; }
+        margin-bottom: 14px;
+        font-size: 26px;
+        font-family: "Comfortaa", cursive;
+        color: #ffffff;
+        text-transform: uppercase; }
         footer .footer-content .profile .profile-wrapper .contact-us .email-wrapper .input-email::-webkit-input-placeholder {
-          font-size: 26px;
-          font-family: "Comfortaa", cursive;
-          color: #ffffff;
-          text-transform: uppercase; }
+          color: #ffffff; }
+        footer .footer-content .profile .profile-wrapper .contact-us .email-wrapper .input-email:focus {
+          outline: none; }
       footer .footer-content .profile .profile-wrapper .contact-us .email-wrapper .confirmation {
         margin-bottom: 69px; }
         footer .footer-content .profile .profile-wrapper .contact-us .email-wrapper .confirmation label {
