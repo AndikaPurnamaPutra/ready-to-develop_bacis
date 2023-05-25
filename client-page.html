@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client Page</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="creative-style.css" />
-    <link rel="stylesheet" href="client-style.css" />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link rel="stylesheet" href="assets/scss/responsive.css" />
+    <link rel="stylesheet" href="assets/scss/creative-style.css" />
+    <link rel="stylesheet" href="assets/scss/client-style.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -45,43 +45,48 @@
     <!-- NAVBAR SECTION END -->
 
     <!-- HERO SECTION START -->
-    <section class="hero">
+    <section class="hero-creative">
       <div class="container container--no-padding">
-        <div class="hero--header-image">
-          <div class="header-image-left">
-            <div class="column-left-one">
-              <div class="content-column-left-one">
-                <img src="assets/images/creative-hero-img-1.png" class="image-hero" alt="" />
+        <div class="wrapper">
+          <div class="header-hero-image d-flex">
+            <div class="col-left d-flex">
+              <div class="content-image-left d-flex d-flex--column">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-1.png" class="image-hero" alt="" />
+                </div>
+                <div class="image-content-l">
+                  <img src="assets/images/creative-hero-img-2.png" class="image-hero" alt="" />
+                </div>
               </div>
-              <div class="content-column-left-two">
-                <img src="assets/images/creative-hero-img-2.png" class="image-hero image-hero--dekstop" alt="" />
-                <img src="assets/images/hero-img-4.png" class="image-hero image-hero--mobile" alt="" />
+              <div class="content-image-right d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-3.png" class="image-hero" alt="" />
+                </div>
               </div>
             </div>
-            <div class="column-left-two">
-              <div class="content-column-left-one">
-                <img src="assets/images/creative-hero-img-3.png" class="image-hero image-hero--dekstop" alt="" />
+            <div class="col-right d-flex--column">
+              <div class="content-image-left d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-4.png" class="image-hero" alt="" />
+                </div>
+                <div class="image-content-l">
+                  <img src="assets/images/creative-hero-img-5.png" class="image-hero" alt="" />
+                </div>
+              </div>
+              <div class="content-image-right d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-6.png" class="image-hero" alt="" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="header-image-right">
-            <div class="column-right-one">
-              <div class="content-column-right-one">
-                <img src="assets/images/creative-hero-img-4.png" class="image-hero" alt="" />
-              </div>
-              <div class="content-column-right-two">
-                <img src="assets/images/creative-hero-img-5.png" class="image-hero" alt="" />
-              </div>
-            </div>
-            <div class="column-right-two">
-              <div class="content-column-right-one">
-                <img src="assets/images/creative-hero-img-6.png" class="image-hero" alt="" />
-              </div>
-            </div>
+          <div class="hero--header-content">
+            <h1 class="heading-text">
+              BETTER <br />
+              RELATIONSHIPS. <br />
+              BETTER RESULTS.
+            </h1>
           </div>
-        </div>
-        <div class="hero--header-content">
-          <h1 class="heading-text">BETTER <br />RELATIONSHIPS. <br />BETTER RESULTS.</h1>
         </div>
       </div>
     </section>
@@ -89,16 +94,32 @@
 
     <!-- SECTION 2 START -->
     <section class="section-logo">
-      <div class="container container--no-padding">
+      <div class="">
         <div class="logo-content">
-          <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
-          <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
+          </div>
         </div>
       </div>
     </section>
@@ -501,8 +522,8 @@
       </div>
 
       <div class="content container">
-        <div class="box-content">
-          <div class="box-slider">
+        <div class="box-content gap-30 padding-inline-unset">
+          <div class="box-slider d-flex">
             <div class="text-content">
               <h3>CLIENT CHALLENGES</h3>
               <p>Businesses of all sizes are in need of high-quality, agile, done for or with you creative services.</p>
@@ -513,7 +534,7 @@
               </p>
             </div>
           </div>
-          <div class="box-slider">
+          <div class="box-slider d-flex">
             <div class="text-content">
               <h3>FREELANCE CHALLENGES</h3>
               <p>
@@ -523,7 +544,7 @@
               </p>
             </div>
           </div>
-          <div class="box-slider">
+          <div class="box-slider d-flex">
             <div class="text-content">
               <h3>project harmony</h3>
               <p>

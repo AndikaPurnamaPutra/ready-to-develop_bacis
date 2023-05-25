@@ -1,0 +1,90 @@
+.heading .heading-image {
+  width: auto;
+  height: 754px; }
+  .heading .heading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.section-slider-logo {
+  background-color: #e13d31;
+  padding-block: 40px; }
+  .section-slider-logo .slider-logo {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px; }
+    .section-slider-logo .slider-logo::-webkit-scrollbar {
+      display: none; }
+    .section-slider-logo .slider-logo .slick-track {
+      display: flex;
+      gap: 45px;
+      justify-content: center;
+      align-items: center; }
+    .section-slider-logo .slider-logo .btn-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .section-slider-logo .slider-logo a {
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      gap: 21px;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .section-slider-logo .slider-logo .circle {
+      width: 7px;
+      height: 7px;
+      flex-shrink: 0;
+      object-fit: contain;
+      background-color: #ffffff;
+      border-radius: 100%; }
+
+.no-padding {
+  padding-top: 0; }
+
+.the-tao {
+  padding-bottom: 0; }
+  .the-tao span {
+    color: #e13d31; }
+
+.our-values {
+  padding-top: 0; }
+
+.the-solution {
+  position: relative;
+  padding-block: 100px;
+  background-color: #000000; }
+  .the-solution .text-content h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+  .the-solution .text-content p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 43px;
+    text-transform: uppercase;
+    width: 50%; }
+  .the-solution .text-content .description {
+    display: flex;
+    gap: 30px;
+    width: 100%; }
+  .the-solution .image-background {
+    position: absolute;
+    top: 41px;
+    right: 150px; }
+
+.creative-advisory-board {
+  padding-bottom: 100px; }
+  .creative-advisory-board .heading-content .text-content h2 {
+    color: #ffffff; }
+    .creative-advisory-board .heading-content .text-content h2 span {
+      color: #b6ac92; }
+  .creative-advisory-board .box-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 33px; }
+  .creative-advisory-board .card {
+    max-width: 322px; }
+
+/*# sourceMappingURL=about-style.css.map */

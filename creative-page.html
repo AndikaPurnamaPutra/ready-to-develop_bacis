@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative Page</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="creative-style.css" />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link rel="stylesheet" href="assets/scss/responsive.css" />
+    <link rel="stylesheet" href="assets/scss/creative-style.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -44,59 +44,74 @@
     <!-- NAVBAR SECTION END -->
 
     <!-- HERO SECTION START -->
-    <section class="hero">
+    <section class="hero-creative">
       <div class="container container--no-padding">
-        <div class="hero--header-image">
-          <div class="header-image-left">
-            <div class="column-left-one">
-              <div class="content-column-left-one">
-                <img src="assets/images/creative-hero-img-1.png" class="image-hero" alt="" />
+        <div class="wrapper">
+          <div class="header-hero-image d-flex">
+            <div class="col-left d-flex">
+              <div class="content-image-left d-flex d-flex--column">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-1.png" class="image-hero" alt="" />
+                </div>
+                <div class="image-content-l">
+                  <img src="assets/images/creative-hero-img-2.png" class="image-hero" alt="" />
+                </div>
               </div>
-              <div class="content-column-left-two">
-                <img src="assets/images/creative-hero-img-2.png" class="image-hero image-hero--dekstop" alt="" />
-                <img src="assets/images/hero-img-4.png" class="image-hero image-hero--mobile" alt="" />
+              <div class="content-image-right d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-3.png" class="image-hero" alt="" />
+                </div>
               </div>
             </div>
-            <div class="column-left-two">
-              <div class="content-column-left-one">
-                <img src="assets/images/creative-hero-img-3.png" class="image-hero image-hero--dekstop" alt="" />
+            <div class="col-right d-flex--column">
+              <div class="content-image-left d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-4.png" class="image-hero" alt="" />
+                </div>
+                <div class="image-content-l">
+                  <img src="assets/images/creative-hero-img-5.png" class="image-hero" alt="" />
+                </div>
+              </div>
+              <div class="content-image-right d-flex">
+                <div class="image-content-i">
+                  <img src="assets/images/creative-hero-img-6.png" class="image-hero" alt="" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="header-image-right">
-            <div class="column-right-one">
-              <div class="content-column-right-one">
-                <img src="assets/images/creative-hero-img-4.png" class="image-hero" alt="" />
-              </div>
-              <div class="content-column-right-two">
-                <img src="assets/images/creative-hero-img-5.png" class="image-hero" alt="" />
-              </div>
-            </div>
-            <div class="column-right-two">
-              <div class="content-column-right-one">
-                <img src="assets/images/creative-hero-img-6.png" class="image-hero" alt="" />
-              </div>
-            </div>
+          <div class="hero--header-content">
+            <h1 class="heading-text">SHINE ON, CREATIVES.</h1>
           </div>
-        </div>
-        <div class="hero--header-content">
-          <h1 class="heading-text">WE’RE REIMAGINING <br />THE GIG ECONOMY</h1>
         </div>
       </div>
     </section>
     <!-- HERO SECTION END -->
 
     <!-- SECTION 2 START -->
-    <section class="section-logo-creative">
-      <div class="container container--no-padding">
-        <div class="logo-content">
+    <section class="section-logo">
+      <div class="logo-content">
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+        </div>
+        <div>
           <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
         </div>
       </div>
@@ -307,49 +322,6 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 5 END -->
-
-    <!-- SECTION 6 START -->
-    <section class="best-indie-life">
-      <div class="container">
-        <div class="heading-content">
-          <div class="text-content">
-            <h2>LIVE YOUR <br /><span>BEST INDIE-LIFE</span></h2>
-          </div>
-          <div class="box-button">
-            <a href="#" class="btn btn--outline"
-              >REGISTER TODAY<img src="assets/images/arrow-small-white.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="box-content">
-          <div class="content-wrapper">
-            <div class="heading">
-              <h2>Step #1: Register Online</h2>
-            </div>
-            <div class="text-content">
-              <p>Tell us all about your skills and goals, share your resume and portfolio</p>
-            </div>
-          </div>
-          <div class="content-wrapper">
-            <div class="heading">
-              <h2>Step #2: Meet Face to Face</h2>
-            </div>
-            <div class="text-content">
-              <p>You’re not just a number, so let’s get to know one another a bit. Business is personal</p>
-            </div>
-          </div>
-          <div class="content-wrapper">
-            <div class="heading">
-              <h2>Step #3: Get Busy</h2>
-            </div>
-            <div class="text-content">
-              <p>You’re not just a number, so let’s get to know one another a bit. Business is personal</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- SECTION 6 END -->
 
     <!-- SECTION 7 START -->
@@ -508,51 +480,45 @@
 
       <div class="content container container--no-padding">
         <div class="box-content">
-          <div class="box">
-            <div class="wrapper">
+          <div class="wrapper wrapper--border-bottom">
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Time > Money</h5>
-            </div>
-            <div class="wrapper wrapper--padding">
+              <h5>Time > Money</h5>
+            </box>
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Contribute to a conversation</h5>
-            </div>
+              <h5>Fulfillment is the Greatest Power</h5>
+            </box>
+            <box>
+              <div class="circle"></div>
+              <h5>Business is Personal</h5>
+            </box>
+            <box>
+              <div class="circle"></div>
+              <h5>Independence requires Interdependence</h5>
+            </box>
+            <box class="border-none">
+              <div class="circle"></div>
+              <h5>Act in spite of fear</h5>
+            </box>
           </div>
-          <div class="box">
-            <div class="wrapper">
+          <div class="wrapper wrapper--border-bottom">
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Fulfillment is the Greatest Power</h5>
-            </div>
-            <div class="wrapper wrapper--padding">
+              <h5>Contribute to a conversation</h5>
+            </box>
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Work harder at working smart</h5>
-            </div>
-          </div>
-          <div class="box">
-            <div class="wrapper">
+              <h5>Work harder at working smart</h5>
+            </box>
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Business is Personal</h5>
-            </div>
-            <div class="wrapper wrapper--padding">
+              <h5>Agility, Resilience & Fluidity</h5>
+            </box>
+            <box>
               <div class="circle"></div>
-              <h5 class="text-content">Agility, Resilience & Fluidity</h5>
-            </div>
-          </div>
-          <div class="box">
-            <div class="wrapper">
-              <div class="circle"></div>
-              <h5 class="text-content">Independence requires Interdependence</h5>
-            </div>
-            <div class="wrapper wrapper--padding">
-              <div class="circle"></div>
-              <h5 class="text-content">Always strive for balance</h5>
-            </div>
-          </div>
-          <div class="box">
-            <div class="wrapper">
-              <div class="circle"></div>
-              <h5 class="text-content">Act in spite of fear</h5>
-            </div>
+              <h5>Always strive for balance</h5>
+            </box>
           </div>
         </div>
         <a href="#" class="btn btn--outline btn--enjoy"
@@ -628,14 +594,6 @@
 
     <script>
       $(document).ready(() => {
-        $(".logo-content").slick({
-          autoplay: true,
-          autoplaySpeed: 0,
-          speed: 2500,
-          slidesToShow: 6,
-          cssEase: "linear",
-        });
-
         $(".portfolio-content").slick({
           centerMode: false,
           autoplay: true,
@@ -717,6 +675,16 @@
               },
             },
           ],
+        });
+
+        $(".logo-content").slick({
+          autoplay: true,
+          autoplaySpeed: 0,
+          arrows: false,
+          speed: 2500,
+          cssEase: "linear",
+          variableWidth: true,
+          centerMode: true,
         });
       });
     </script>

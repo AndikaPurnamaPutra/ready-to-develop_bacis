@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   overflow: auto;
-  margin-top: 60px; }
+  height: 100vh; }
   .the-tao .content::-webkit-scrollbar {
     display: none; }
   .the-tao .content .box-content {
