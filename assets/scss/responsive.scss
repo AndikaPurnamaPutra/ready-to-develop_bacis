@@ -316,7 +316,8 @@
     .join-wrapper {
       .heading-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start !important;
+        gap: 18px !important;
       }
     }
   }
@@ -324,7 +325,7 @@
   .section-membership {
     .heading-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start !important;
       margin-bottom: 30px;
 
       .text-content {
@@ -333,23 +334,60 @@
         }
       }
     }
+
+    .box-content {
+      .btn-wrapper {
+        flex-direction: column;
+        align-items: unset !important;
+        gap: 21px;
+
+        .btn-lg {
+          img {
+            max-width: 26px !important;
+          }
+
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
   }
 
   .best-indie-life {
     .heading-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start !important;
+      margin-bottom: 30px !important;
 
       .text-content {
         margin-bottom: 18px;
       }
     }
+
+    .box-content {
+      .content-wrapper {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 20px;
+      }
+
+      .heading {
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    padding-top: 0;
   }
 
   .artist-marketplace {
     .heading-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start !important;
 
       .text-content {
         p {
@@ -365,12 +403,25 @@
   }
 
   .the-tao {
+    .heading-content {
+      padding: 70px 0 !important;
+    }
     .content {
       .box-content {
         flex-direction: column;
 
         .wrapper {
           width: 100% !important;
+
+          h5 {
+            font-size: 24px !important;
+          }
+        }
+
+        .box-slider {
+          p {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -389,6 +440,53 @@
       }
       .description {
         flex-direction: column;
+      }
+    }
+  }
+
+  .next-concert {
+    .slider-next-concert {
+      .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .text-content {
+        width: 100%;
+      }
+
+      .image-content {
+        width: 100%;
+      }
+
+      .slick-dots {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        // text-align: center;
+        bottom: -32px;
+        left: 0;
+        list-style-type: none;
+
+        li {
+          margin: 0;
+        }
+
+        button {
+          width: 8px;
+          height: 8px;
+          padding: 0;
+          border: 2px solid #ffffff;
+          border-radius: 100%;
+          background-color: transparent;
+
+          text-indent: -9999px;
+        }
+
+        li.slick-active button {
+          background-color: #ffffff;
+        }
       }
     }
   }
@@ -497,6 +595,7 @@
   }
 
   .creative-service {
+    padding-top: 0;
     .box-content {
       .box-button {
         .btn--custom {
@@ -603,6 +702,19 @@
       .btn--primary {
         margin: 0 4px;
       }
+    }
+  }
+
+  .hero-creative {
+    .content-image-left,
+    .content-image-right {
+      height: 180px !important;
+    }
+  }
+
+  .hero-community {
+    .heading-text {
+      height: 263px !important;
     }
   }
 
@@ -716,6 +828,27 @@
       }
     }
   }
+
+  .next-concert {
+    .text-content {
+      h5 {
+        font-size: 20px !important;
+      }
+    }
+
+    h2 {
+      line-height: 54px !important;
+      font-size: 32px !important;
+    }
+  }
+
+  // .inde-life-mag {
+  //   .content {
+  //     .group-btn {
+
+  //     }
+  //   }
+  // }
 
   footer {
     h3 {

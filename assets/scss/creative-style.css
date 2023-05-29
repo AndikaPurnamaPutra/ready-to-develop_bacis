@@ -40,6 +40,7 @@
       .section-join .join-wrapper .heading-content p {
         flex: 2;
         color: #ffffff;
+        text-transform: uppercase;
         line-height: 26px; }
     .section-join .join-wrapper .box-content {
       display: flex;
@@ -120,7 +121,8 @@
     transition: all 200ms ease; }
     .section-membership .box-content .btn-wrapper .btn-lg {
       flex: 1;
-      display: flex; }
+      display: flex;
+      align-items: center; }
       .section-membership .box-content .btn-wrapper .btn-lg img {
         transition: all 200ms ease;
         max-width: 42px;
@@ -131,7 +133,7 @@
       transition: all 200ms ease;
       max-width: 558px;
       color: #ffffff;
-      opacity: 0; }
+      display: none; }
       .section-membership .box-content .btn-wrapper .text-content p {
         opacity: 0.6; }
     .section-membership .box-content .btn-wrapper:hover {
@@ -143,7 +145,7 @@
       .section-membership .box-content .btn-wrapper:hover .btn-lg a {
         color: #e13d31; }
       .section-membership .box-content .btn-wrapper:hover .text-content {
-        opacity: 1; }
+        display: block; }
 
 .best-indie-life {
   background-color: #000000;
@@ -151,7 +153,6 @@
   padding-bottom: 100px; }
   .best-indie-life .heading-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 60px; }
     .best-indie-life .heading-content .text-content {
@@ -181,8 +182,9 @@
       opacity: 0.6; }
 
 .testimonial {
-  padding-top: 100px;
   padding-bottom: 100px; }
+  .testimonial .heading-content h2 {
+    color: #ffffff !important; }
 
 .box-card-wrapper .box-button {
   display: flex;

@@ -6,9 +6,12 @@
 
 @font-face {
   font-family: "Godbold";
-  src: url(assets/font/Gobold\ Bold.otf); }
+  src: url("/assets/font/gobold_bold-webfont.woff2") format("woff2"), url("/assets/font/gobold_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  font-family: "Comfortaa", cursive; }
+  font-family: "Comfortaa", cursive;
+  background-color: #000000; }
 
 .d-flex {
   display: flex; }
@@ -62,25 +65,38 @@ p {
   text-transform: uppercase;
   font-weight: 600;
   text-transform: uppercase;
-  display: flex; }
+  display: inline-block; }
   .btn:hover {
     cursor: pointer;
     color: #b6ac92; }
   .btn--custom {
     font-size: 48px;
     font-family: "Godbold", sans-serif; }
-  .btn--outline img {
-    margin-left: 32px;
-    max-width: 15px;
-    object-fit: contain; }
-  .btn--outline--lg {
-    font-size: 20px; }
+  .btn--outline {
+    display: flex; }
+    .btn--outline img {
+      margin-left: 32px;
+      max-width: 15px;
+      object-fit: contain; }
+    .btn--outline--lg {
+      font-size: 20px; }
   .btn--primary {
     background-color: #ffffff;
     color: #000000;
     padding: 10px 32px;
+    flex-shrink: 0;
     border-radius: 25px;
     transition: all 200ms ease; }
+    .btn--primary-custom {
+      padding: 16px 32px;
+      background-color: #e13d31;
+      color: #ffffff; }
+    .btn--primary-custom-outline {
+      color: #ffffff;
+      background-color: transparent; }
+      .btn--primary-custom-outline:hover {
+        color: #ffffff;
+        background-color: #e13d31; }
   .btn--primary-dark:hover {
     cursor: pointer;
     background-color: #000000;
@@ -450,8 +466,8 @@ header {
   width: 100%; }
   .portfolio .portfolio-heading {
     background-color: #e13d31;
-    padding-top: 65.5px;
-    padding-bottom: 65.5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center; }

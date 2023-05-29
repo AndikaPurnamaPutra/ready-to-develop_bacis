@@ -18,3 +18,5 @@ function stickyNav() {
 }
 
 window.addEventListener("scroll", stickyNav);
+
+AOS.init();

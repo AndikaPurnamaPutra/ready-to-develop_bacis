@@ -1,0 +1,152 @@
+.hero-community {
+  .heading-text {
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(/assets/images/hero-image-community.png);
+
+    h1 {
+      font-size: 68px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
+
+.next-concert {
+  background-color: #000000;
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+
+    li {
+      margin: 10px 0;
+    }
+
+    button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 2px solid #ffffff;
+      border-radius: 100%;
+      background-color: transparent;
+
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: #ffffff;
+    }
+  }
+
+  .slider-next-concert {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    align-items: flex-end;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 28px;
+  }
+
+  .slick-vertical .slick-slide {
+    display: flex;
+  }
+
+  .text-content {
+    width: 50%;
+    .date-event {
+      align-items: center;
+      gap: 21px;
+      margin-bottom: 17px;
+      .rectangle {
+        width: 51px;
+        height: 22px;
+        border: 1.5px solid #ffff;
+        border-radius: 24px;
+      }
+      h5 {
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 88px;
+      font-size: 68px;
+
+      span {
+        color: #b6ac92;
+      }
+    }
+  }
+
+  .image-content {
+    width: 50%;
+  }
+}
+
+.padding-block {
+  padding-block: 100px;
+}
+
+.artist-marketplace {
+  .wrapper {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.inde-life-mag {
+  padding-bottom: 100px;
+  .content {
+    .group-btn {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .card-body {
+    h4 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+  .box-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

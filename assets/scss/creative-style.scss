@@ -76,6 +76,7 @@
       p {
         flex: 2;
         color: #ffffff;
+        text-transform: uppercase;
         line-height: 26px;
       }
     }
@@ -194,6 +195,7 @@
       .btn-lg {
         flex: 1;
         display: flex;
+        align-items: center;
 
         img {
           transition: all 200ms ease;
@@ -207,7 +209,7 @@
         transition: all 200ms ease;
         max-width: 558px;
         color: #ffffff;
-        opacity: 0;
+        display: none;
 
         p {
           opacity: 0.6;
@@ -229,7 +231,7 @@
         }
 
         .text-content {
-          opacity: 1;
+          display: block;
         }
       }
     }
@@ -249,7 +251,6 @@
 
   .heading-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
     .text-content {
@@ -297,8 +298,13 @@
 
 // SECTION TESTIMONIAL START
 .testimonial {
-  padding-top: 100px;
   padding-bottom: 100px;
+
+  .heading-content {
+    h2 {
+      color: #ffffff !important;
+    }
+  }
 }
 .box-card-wrapper {
   .box-button {

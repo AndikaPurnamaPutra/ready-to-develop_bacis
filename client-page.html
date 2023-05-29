@@ -33,10 +33,10 @@
             </span> -->
           <div class="navbar-nav">
             <div class="navbar-list">
-              <a href="#">home</a>
-              <a href="#">creatives</a>
+              <a href="index.html">home</a>
+              <a href="creative-page.html">creatives</a>
               <a href="#">clients</a>
-              <a href="#">community</a>
+              <a href="community-page.html">community</a>
             </div>
           </div>
         </nav>
@@ -94,32 +94,30 @@
 
     <!-- SECTION 2 START -->
     <section class="section-logo">
-      <div class="">
-        <div class="logo-content">
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
-          </div>
-          <div>
-            <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
-          </div>
+      <div class="logo-content">
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/urbane-logo.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/waterfront-logo.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/can-philadelphia.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="#" class="btn-logo"><img src="assets/images/public-health-logo.png" alt="" /></a>
         </div>
       </div>
     </section>
@@ -282,7 +280,7 @@
           <p>Delivering impactful design that is imaginative, thoughtful, and distinctive..</p>
         </div>
         <a href="#" class="btn btn--outline"
-          >SHOW MORE
+          >VIEW PORTFOLIO
           <img src="assets/images/arrow-small-white.png" alt="" />
         </a>
       </div>
@@ -298,7 +296,7 @@
               and lending a hand in the creation of their amazing video (above).
             </p>
             <a href="#" class="btn btn--outline"
-              >SHOW MORE
+              >VIEW PORTFOLIO
               <img src="assets/images/arrow-small-white.png" alt="" />
             </a>
           </div>
@@ -314,7 +312,7 @@
               and lending a hand in the creation of their amazing video (above).
             </p>
             <a href="#" class="btn btn--outline"
-              >SHOW MORE
+              >VIEW PORTFOLIO
               <img src="assets/images/arrow-small-white.png" alt="" />
             </a>
           </div>
@@ -330,7 +328,7 @@
               and lending a hand in the creation of their amazing video (above).
             </p>
             <a href="#" class="btn btn--outline"
-              >SHOW MORE
+              >VIEW PORTFOLIO
               <img src="assets/images/arrow-small-white.png" alt="" />
             </a>
           </div>
@@ -346,7 +344,7 @@
               and lending a hand in the creation of their amazing video (above).
             </p>
             <a href="#" class="btn btn--outline"
-              >SHOW MORE
+              >VIEW PORTFOLIO
               <img src="assets/images/arrow-small-white.png" alt="" />
             </a>
           </div>
@@ -364,7 +362,7 @@
           </div>
           <div class="box-button">
             <a href="#" class="btn btn--outline"
-              >REGISTER TODAY<img src="assets/images/arrow-small-white.png" alt=""
+              > GET STARTED<img src="assets/images/arrow-small-white.png" alt=""
             /></a>
           </div>
         </div>
@@ -467,9 +465,7 @@
             </div>
           </div>
           <div class="box-button">
-            <a href="#" class="btn btn--outline"
-              >REGISTER TODAY<img src="assets/images/arrow-small-white.png" alt=""
-            /></a>
+            <a href="#" class="btn btn--outline">SHOW MORE<img src="assets/images/arrow-small-white.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -485,7 +481,7 @@
             <p>Host Meetings, Shoots and Events  At Our Studio, located in Cedar Park, West PhillY</p>
           </div>
           <a href="#" class="btn btn--outline"
-            >SHOW MORE
+            >PLAN A VISIST
             <img src="assets/images/arrow-small-white.png" alt="" />
           </a>
         </div>
@@ -605,6 +601,8 @@
     </footer>
     <!-- FOOTER END -->
 
+    <script src="script.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -628,9 +626,11 @@
         $(".logo-content").slick({
           autoplay: true,
           autoplaySpeed: 0,
+          arrows: false,
           speed: 2500,
-          slidesToShow: 6,
           cssEase: "linear",
+          variableWidth: true,
+          centerMode: true,
         });
 
         $(".portfolio-content").slick({
